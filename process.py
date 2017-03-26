@@ -12,14 +12,14 @@ from FileFinder import FileFinder
 # Beállítások
 db = "host=127.0.0.1 port=5432 user='homestead' password='secret' dbname='szakdolgozat'"
 folder = os.path.dirname(os.path.realpath(__file__))
-years = ["1949","1950","1951","1953","1954","1955"]
+years = ["1953"]#,"1950","1951","1953","1954","1955"]
 subfolders = ['georeferalt','vagott']
 processedFolder = "feldolgozott"
 
 # Segédek
 W = Warp(subfolders,db)
-T = Translate(subfolders)
-F = FileFinder(folder)
+T = Translate(subfolders,db)
+F = FileFinder(folder,db)
 
 # 1 év feldolgozásának a folyamata
 def process(y):
@@ -33,11 +33,23 @@ def process(y):
 		# Alkönyvtárak létrehozása
 		for p in subfolders:
 			os.makedirs(os.path.join(_year,p))
-
+	# Alapinformációk
+	print("--------")
+	print("| {} |".format(y))
+	print("--------")
+	print("Képek száma: {}, Georeferált képek száma: {}, Arány: {}%".format(
+		len(F.jpg),
+		len(F.points),
+		float(len(F.points)) / float(len(F.jpg)) * 100
+	))
 	# Georeferálás
 	v = F.year(y)
-	georeferenced = [T.run(a,_year) for a in v]
+	georeferenced = [T.run(a,_year,True if y=="1953" else False ) for a in v]
 	cut = [W.run(i,_year) for i in georeferenced]
+	print("Megvágott képek száma: {}, Arány: {}%".format(
+		len(cut),
+		float(len(cut)) / float(len(F.jpg)) * 100))
+	print("---------------------------------------------")
 
 def main():
 	for y in years:

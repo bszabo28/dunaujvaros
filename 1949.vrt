@@ -1,0 +1,276 @@
+<VRTDataset rasterXSize="14062" rasterYSize="10947">
+  <SRS>PROJCS["WGS 84 / Pseudo-Mercator",GEOGCS["WGS 84",DATUM["WGS_1984",SPHEROID["WGS 84",6378137,298.257223563,AUTHORITY["EPSG","7030"]],AUTHORITY["EPSG","6326"]],PRIMEM["Greenwich",0],UNIT["degree",0.0174532925199433],AUTHORITY["EPSG","4326"]],PROJECTION["Mercator_1SP"],PARAMETER["central_meridian",0],PARAMETER["scale_factor",1],PARAMETER["false_easting",0],PARAMETER["false_northing",0],UNIT["metre",1,AUTHORITY["EPSG","9001"]],EXTENSION["PROJ4","+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext  +no_defs"],AUTHORITY["EPSG","3857"]]</SRS>
+  <GeoTransform>  2.0968710625057614e+06,  1.4358241919336150e+00,  0.0000000000000000e+00,  5.9439845886472985e+06,  0.0000000000000000e+00, -1.4359509248540432e+00</GeoTransform>
+  <VRTRasterBand dataType="Byte" band="1">
+    <NoDataValue>0.00000000000000E+00</NoDataValue>
+    <ColorInterp>Red</ColorInterp>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">feldolgozott/1949/vagott/0029_002.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="3801" RasterYSize="3650" DataType="Byte" BlockXSize="3801" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="3801" ySize="3650" />
+      <DstRect xOff="0" yOff="0" xSize="4870" ySize="4676" />
+      <NODATA>0</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">feldolgozott/1949/vagott/0029_003.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="4198" RasterYSize="4165" DataType="Byte" BlockXSize="4198" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="4198" ySize="4165" />
+      <DstRect xOff="4142" yOff="7257" xSize="3719" ySize="3690" />
+      <NODATA>0</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">feldolgozott/1949/vagott/0029_004.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="3873" RasterYSize="3712" DataType="Byte" BlockXSize="3873" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="3873" ySize="3712" />
+      <DstRect xOff="4176" yOff="5342" xSize="3385" ySize="3245" />
+      <NODATA>0</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">feldolgozott/1949/vagott/0029_005.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="3635" RasterYSize="3546" DataType="Byte" BlockXSize="3635" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="3635" ySize="3546" />
+      <DstRect xOff="10712" yOff="6254" xSize="3350" ySize="3268" />
+      <NODATA>0</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">feldolgozott/1949/vagott/0029_006.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="3600" RasterYSize="3512" DataType="Byte" BlockXSize="3600" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="3600" ySize="3512" />
+      <DstRect xOff="10483" yOff="5078" xSize="3312" ySize="3231" />
+      <NODATA>0</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">feldolgozott/1949/vagott/0029_007.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="3477" RasterYSize="3580" DataType="Byte" BlockXSize="3477" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="3477" ySize="3580" />
+      <DstRect xOff="10224" yOff="3900" xSize="3205" ySize="3300" />
+      <NODATA>0</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">feldolgozott/1949/vagott/39629_11-55.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="3625" RasterYSize="3670" DataType="Byte" BlockXSize="3625" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="3625" ySize="3670" />
+      <DstRect xOff="9338" yOff="1487" xSize="3313" ySize="3353" />
+      <NODATA>0</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">feldolgozott/1949/vagott/39630_12-30.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="3557" RasterYSize="3613" DataType="Byte" BlockXSize="3557" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="3557" ySize="3613" />
+      <DstRect xOff="2538" yOff="4296" xSize="4558" ySize="4630" />
+      <NODATA>0</NODATA>
+    </ComplexSource>
+  </VRTRasterBand>
+  <VRTRasterBand dataType="Byte" band="2">
+    <NoDataValue>0.00000000000000E+00</NoDataValue>
+    <ColorInterp>Green</ColorInterp>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">feldolgozott/1949/vagott/0029_002.tif</SourceFilename>
+      <SourceBand>2</SourceBand>
+      <SourceProperties RasterXSize="3801" RasterYSize="3650" DataType="Byte" BlockXSize="3801" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="3801" ySize="3650" />
+      <DstRect xOff="0" yOff="0" xSize="4870" ySize="4676" />
+      <NODATA>0</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">feldolgozott/1949/vagott/0029_003.tif</SourceFilename>
+      <SourceBand>2</SourceBand>
+      <SourceProperties RasterXSize="4198" RasterYSize="4165" DataType="Byte" BlockXSize="4198" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="4198" ySize="4165" />
+      <DstRect xOff="4142" yOff="7257" xSize="3719" ySize="3690" />
+      <NODATA>0</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">feldolgozott/1949/vagott/0029_004.tif</SourceFilename>
+      <SourceBand>2</SourceBand>
+      <SourceProperties RasterXSize="3873" RasterYSize="3712" DataType="Byte" BlockXSize="3873" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="3873" ySize="3712" />
+      <DstRect xOff="4176" yOff="5342" xSize="3385" ySize="3245" />
+      <NODATA>0</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">feldolgozott/1949/vagott/0029_005.tif</SourceFilename>
+      <SourceBand>2</SourceBand>
+      <SourceProperties RasterXSize="3635" RasterYSize="3546" DataType="Byte" BlockXSize="3635" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="3635" ySize="3546" />
+      <DstRect xOff="10712" yOff="6254" xSize="3350" ySize="3268" />
+      <NODATA>0</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">feldolgozott/1949/vagott/0029_006.tif</SourceFilename>
+      <SourceBand>2</SourceBand>
+      <SourceProperties RasterXSize="3600" RasterYSize="3512" DataType="Byte" BlockXSize="3600" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="3600" ySize="3512" />
+      <DstRect xOff="10483" yOff="5078" xSize="3312" ySize="3231" />
+      <NODATA>0</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">feldolgozott/1949/vagott/0029_007.tif</SourceFilename>
+      <SourceBand>2</SourceBand>
+      <SourceProperties RasterXSize="3477" RasterYSize="3580" DataType="Byte" BlockXSize="3477" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="3477" ySize="3580" />
+      <DstRect xOff="10224" yOff="3900" xSize="3205" ySize="3300" />
+      <NODATA>0</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">feldolgozott/1949/vagott/39629_11-55.tif</SourceFilename>
+      <SourceBand>2</SourceBand>
+      <SourceProperties RasterXSize="3625" RasterYSize="3670" DataType="Byte" BlockXSize="3625" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="3625" ySize="3670" />
+      <DstRect xOff="9338" yOff="1487" xSize="3313" ySize="3353" />
+      <NODATA>0</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">feldolgozott/1949/vagott/39630_12-30.tif</SourceFilename>
+      <SourceBand>2</SourceBand>
+      <SourceProperties RasterXSize="3557" RasterYSize="3613" DataType="Byte" BlockXSize="3557" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="3557" ySize="3613" />
+      <DstRect xOff="2538" yOff="4296" xSize="4558" ySize="4630" />
+      <NODATA>0</NODATA>
+    </ComplexSource>
+  </VRTRasterBand>
+  <VRTRasterBand dataType="Byte" band="3">
+    <NoDataValue>0.00000000000000E+00</NoDataValue>
+    <ColorInterp>Blue</ColorInterp>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">feldolgozott/1949/vagott/0029_002.tif</SourceFilename>
+      <SourceBand>3</SourceBand>
+      <SourceProperties RasterXSize="3801" RasterYSize="3650" DataType="Byte" BlockXSize="3801" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="3801" ySize="3650" />
+      <DstRect xOff="0" yOff="0" xSize="4870" ySize="4676" />
+      <NODATA>0</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">feldolgozott/1949/vagott/0029_003.tif</SourceFilename>
+      <SourceBand>3</SourceBand>
+      <SourceProperties RasterXSize="4198" RasterYSize="4165" DataType="Byte" BlockXSize="4198" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="4198" ySize="4165" />
+      <DstRect xOff="4142" yOff="7257" xSize="3719" ySize="3690" />
+      <NODATA>0</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">feldolgozott/1949/vagott/0029_004.tif</SourceFilename>
+      <SourceBand>3</SourceBand>
+      <SourceProperties RasterXSize="3873" RasterYSize="3712" DataType="Byte" BlockXSize="3873" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="3873" ySize="3712" />
+      <DstRect xOff="4176" yOff="5342" xSize="3385" ySize="3245" />
+      <NODATA>0</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">feldolgozott/1949/vagott/0029_005.tif</SourceFilename>
+      <SourceBand>3</SourceBand>
+      <SourceProperties RasterXSize="3635" RasterYSize="3546" DataType="Byte" BlockXSize="3635" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="3635" ySize="3546" />
+      <DstRect xOff="10712" yOff="6254" xSize="3350" ySize="3268" />
+      <NODATA>0</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">feldolgozott/1949/vagott/0029_006.tif</SourceFilename>
+      <SourceBand>3</SourceBand>
+      <SourceProperties RasterXSize="3600" RasterYSize="3512" DataType="Byte" BlockXSize="3600" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="3600" ySize="3512" />
+      <DstRect xOff="10483" yOff="5078" xSize="3312" ySize="3231" />
+      <NODATA>0</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">feldolgozott/1949/vagott/0029_007.tif</SourceFilename>
+      <SourceBand>3</SourceBand>
+      <SourceProperties RasterXSize="3477" RasterYSize="3580" DataType="Byte" BlockXSize="3477" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="3477" ySize="3580" />
+      <DstRect xOff="10224" yOff="3900" xSize="3205" ySize="3300" />
+      <NODATA>0</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">feldolgozott/1949/vagott/39629_11-55.tif</SourceFilename>
+      <SourceBand>3</SourceBand>
+      <SourceProperties RasterXSize="3625" RasterYSize="3670" DataType="Byte" BlockXSize="3625" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="3625" ySize="3670" />
+      <DstRect xOff="9338" yOff="1487" xSize="3313" ySize="3353" />
+      <NODATA>0</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">feldolgozott/1949/vagott/39630_12-30.tif</SourceFilename>
+      <SourceBand>3</SourceBand>
+      <SourceProperties RasterXSize="3557" RasterYSize="3613" DataType="Byte" BlockXSize="3557" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="3557" ySize="3613" />
+      <DstRect xOff="2538" yOff="4296" xSize="4558" ySize="4630" />
+      <NODATA>0</NODATA>
+    </ComplexSource>
+  </VRTRasterBand>
+  <VRTRasterBand dataType="Byte" band="4">
+    <NoDataValue>0.00000000000000E+00</NoDataValue>
+    <ColorInterp>Alpha</ColorInterp>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">feldolgozott/1949/vagott/0029_002.tif</SourceFilename>
+      <SourceBand>4</SourceBand>
+      <SourceProperties RasterXSize="3801" RasterYSize="3650" DataType="Byte" BlockXSize="3801" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="3801" ySize="3650" />
+      <DstRect xOff="0" yOff="0" xSize="4870" ySize="4676" />
+      <NODATA>0</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">feldolgozott/1949/vagott/0029_003.tif</SourceFilename>
+      <SourceBand>4</SourceBand>
+      <SourceProperties RasterXSize="4198" RasterYSize="4165" DataType="Byte" BlockXSize="4198" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="4198" ySize="4165" />
+      <DstRect xOff="4142" yOff="7257" xSize="3719" ySize="3690" />
+      <NODATA>0</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">feldolgozott/1949/vagott/0029_004.tif</SourceFilename>
+      <SourceBand>4</SourceBand>
+      <SourceProperties RasterXSize="3873" RasterYSize="3712" DataType="Byte" BlockXSize="3873" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="3873" ySize="3712" />
+      <DstRect xOff="4176" yOff="5342" xSize="3385" ySize="3245" />
+      <NODATA>0</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">feldolgozott/1949/vagott/0029_005.tif</SourceFilename>
+      <SourceBand>4</SourceBand>
+      <SourceProperties RasterXSize="3635" RasterYSize="3546" DataType="Byte" BlockXSize="3635" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="3635" ySize="3546" />
+      <DstRect xOff="10712" yOff="6254" xSize="3350" ySize="3268" />
+      <NODATA>0</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">feldolgozott/1949/vagott/0029_006.tif</SourceFilename>
+      <SourceBand>4</SourceBand>
+      <SourceProperties RasterXSize="3600" RasterYSize="3512" DataType="Byte" BlockXSize="3600" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="3600" ySize="3512" />
+      <DstRect xOff="10483" yOff="5078" xSize="3312" ySize="3231" />
+      <NODATA>0</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">feldolgozott/1949/vagott/0029_007.tif</SourceFilename>
+      <SourceBand>4</SourceBand>
+      <SourceProperties RasterXSize="3477" RasterYSize="3580" DataType="Byte" BlockXSize="3477" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="3477" ySize="3580" />
+      <DstRect xOff="10224" yOff="3900" xSize="3205" ySize="3300" />
+      <NODATA>0</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">feldolgozott/1949/vagott/39629_11-55.tif</SourceFilename>
+      <SourceBand>4</SourceBand>
+      <SourceProperties RasterXSize="3625" RasterYSize="3670" DataType="Byte" BlockXSize="3625" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="3625" ySize="3670" />
+      <DstRect xOff="9338" yOff="1487" xSize="3313" ySize="3353" />
+      <NODATA>0</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">feldolgozott/1949/vagott/39630_12-30.tif</SourceFilename>
+      <SourceBand>4</SourceBand>
+      <SourceProperties RasterXSize="3557" RasterYSize="3613" DataType="Byte" BlockXSize="3557" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="3557" ySize="3613" />
+      <DstRect xOff="2538" yOff="4296" xSize="4558" ySize="4630" />
+      <NODATA>0</NODATA>
+    </ComplexSource>
+  </VRTRasterBand>
+</VRTDataset>

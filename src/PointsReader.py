@@ -3,7 +3,7 @@
 class PointsReader:
 
         def gcp(self):
-                return [gcp[:4] for gcp in self.values]
+                return self.values
 
         def valid(self):
                 return len(self.values) > 3

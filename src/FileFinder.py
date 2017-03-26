@@ -1,6 +1,9 @@
 # -*- coding: utf-8 -*-
 import os
 import sys
+import psycopg2
+import datetime
+
 sys.path.append(os.path.dirname(__file__))
 from PointsReader import PointsReader
 
@@ -12,6 +15,27 @@ class FileFinder:
 
         raw = []
         georeferred = []
+
+        def updatedb(self):
+                conn = psycopg2.connect(self.db)
+                conn.autocommit = True
+                cur = conn.cursor()
+
+                data = [
+                        {  
+                                "name": os.path.split(filename)[1].replace(".jpg.points",""),
+                                "time": datetime.date.fromtimestamp(os.stat(filename).st_mtime)
+                                
+                        }                        
+                        for filename in self.points
+                ]
+
+                cur.execute("TRUNCATE nyers.osszes;")
+
+                for d in data:
+                        cur.execute("INSERT INTO nyers.osszes (name,last_modified) VALUES ('{}','{}')".format(d['name'],d['time']))
+                cur.close()
+		conn.close()
 
         def year(self,y):
                 return self.gcps([p for p in self.georeferred if p.find(str(y)) != -1])
@@ -49,8 +73,10 @@ class FileFinder:
                 for r,d,f in os.walk(self.currentFolder):
                         self.files += ['{}/{}'.format(r,fi) for fi in f]
 
-        def __init__(self,path):
+        def __init__(self,path,db):
+                self.db = db
                 self.currentFolder = path
                 self.search()
                 self.separate()
                 self.georeferenced()
+                self.updatedb()
