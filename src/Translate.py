@@ -15,11 +15,12 @@ class Translate:
 
                 p,f = os.path.split(path)
                 n, ext = os.path.splitext(f)
-                temp = os.path.join(folder,'temp.tif')
+                temp = 'temp.tiff'
                 to = os.path.join(folder,self.subfolders[0],n + '.tif')
-                command = 'gdal_translate -of GTiff {} "{}" "{}"'.format(gcps,path,to)
+                command2 = 'gdal_translate -of GTiff {} "{}" "{}"'.format(gcps,path,to)
+
                 if(os.path.exists(to) == False or n in self.rows):
-                        os.popen(command)
+                        os.popen(command2)
                 return {
                         'path': to,
                         'name': n

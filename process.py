@@ -12,7 +12,7 @@ from FileFinder import FileFinder
 # Beállítások
 db = "host=127.0.0.1 port=5432 user='homestead' password='secret' dbname='szakdolgozat'"
 folder = os.path.dirname(os.path.realpath(__file__))
-years = ["1953"]#,"1950","1951","1953","1954","1955"]
+years = ["1949"]#,"1950","1951","1953","1954","1955"]
 subfolders = ['georeferalt','vagott']
 processedFolder = "feldolgozott"
 
@@ -26,8 +26,8 @@ def process(y):
 	_year = os.path.join(folder,processedFolder,str(y))
 	
 	# Könyvtárak létrehozása
-        #if(os.path.exists(_year)):
-		#shutil.rmtree(_year)
+        if(os.path.exists(_year)):
+		shutil.rmtree(_year)
         if(os.path.exists(_year) == False):
 		os.makedirs(_year)
 		# Alkönyvtárak létrehozása
@@ -50,6 +50,7 @@ def process(y):
 		len(cut),
 		float(len(cut)) / float(len(F.jpg)) * 100))
 	print("---------------------------------------------")
+	W.buildvrt(_year,y)
 
 def main():
 	for y in years:

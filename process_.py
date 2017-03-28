@@ -133,7 +133,6 @@ class FileFinder():
 
 class CommandFactory():
 
-        folder = "feldolgozott"
         autoreate = True
         autorun = False
 
@@ -168,42 +167,56 @@ class CommandFactory():
                 }
 
         def __init__(self,folder):
-                self.folder = os.path.join(folder,self.folder)
+                self.folder = folder
 
 
 
 ############################################################
 folder = os.path.dirname(os.path.realpath(__file__))
 years = ["1953"]#,"1950","1951","1953","1954","1955"]
-subfolders = ['georeferalt','vagott']
+subfolders = ['modositott','georeferalt','vagott']
 processedFolder = "feldolgozott"
+origFolder = "eredeti"
 ############################################################
-F = FileFinder(folder)
-C = CommandFactory(folder)
+F = FileFinder(os.path.join(folder,origFolder))
+C = CommandFactory(os.path.join(folder,processedFolder))
 C.autorun = True
 
 ############################################################
 command_convert = "convert $src -set colorspace Gray -separate -average $dst"
-name1 = 'modositott'
-
 command_georeferencing = "gdal_translate -ot Byte -a_srs '+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext  +no_defs' -of GTiff {} $src $dst"
-name2 = 'georeferalt'
-
 command_cut = "gdalwarp -override $src $dst -s_srs '+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext  +no_defs' -t_srs '+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext  +no_defs'"
-name3 = 'vagott'
 #############################################################
 
 for o in F.byYear(1949):
 
         # Kép módosítása
-        modified = C.create(command_convert,o['path'],o['year'],'png',name1)
+        modified = C.create(
+                command_convert,
+                o['path'],
+                o['year'],
+                'png',
+                subfolders[0]
+        )
         o.update(modified)
         
         # Kép georeferálása
         gcp = PointsReader(o['world']).parameters()
         partial_command = command_georeferencing.format(gcp)
-        georeferenced = C.create(partial_command,o['commands'][name1]['path'],o['year'],'tiff',name2)
+        georeferenced = C.create(
+                partial_command,
+                o['commands'][subfolders[0]]['path'],
+                o['year'],
+                'tiff',
+                subfolders[1]
+        )
         o.update(georeferenced)
 
         # Kép megvágása
-        C.create(partial_command,o['commands'][name2]['path'],o['year'],'tiff',name3)
+        C.create(
+                partial_command,
+                o['commands'][subfolders[1]]['path'],
+                o['year'],
+                'tiff',
+                subfolders[2]
+        )

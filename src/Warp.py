@@ -6,6 +6,11 @@ import os
 
 class Warp():
 
+	def buildvrt(self,folder,year):
+		to = os.path.join(folder,self.subfolders[1])
+		command = "gdalbuildvrt -overwrite {}.vrt {}/*.tif".format(year,to)
+		os.popen(command)
+
 	def run(self,data,folder):
 		p,f = os.path.split(data['path'])
 		to = os.path.join(folder,self.subfolders[1],f)
