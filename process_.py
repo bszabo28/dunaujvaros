@@ -186,7 +186,7 @@ C.autorun = True
 command_convert = "convert $src -set colorspace Gray -separate -average $dst"
 name1 = 'modositott'
 
-command_georeferencing = "gdal_translate -ot Int16 -a_srs '+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext  +no_defs' -of GTiff {} $src $dst"
+command_georeferencing = "gdal_translate -ot Byte -a_srs '+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext  +no_defs' -of GTiff {} $src $dst"
 name2 = 'georeferalt'
 
 command_cut = "gdalwarp -override $src $dst -s_srs '+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext  +no_defs' -t_srs '+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext  +no_defs'"
