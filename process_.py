@@ -2,6 +2,31 @@
 import os
 from string import Template
 
+"""
+        - Képek átalakítása egységesen RGB színtérbe
+        - A képek tartalmi részének kimetszése
+        - GCP pontok hozzáadása
+        - Georeferálás
+
+
+        1: 
+                Numpy segítségével meg tudom különböztetni a képek csatorna számát?
+        2:
+                Azt a poligont amivel lemetszeném a képet numpy tömbbé alakítom és avval metszek
+        3:
+                gcp pontok hozzáadását pythonból kell megoldani
+                gdalwarp program is pythonból kellene működnie
+
+        Folyamat: 
+                RGB -> Metszet -> Georeferálás (RMS kiszámítása!!!)
+
+        Metszéshez és a georeferáláshoz használt állományokat rendszerben kell kezelni!!
+
+        Munka:
+                Folyamat megoldása
+                Állományok kezelésének megoldása
+
+"""
 class PointsReader():
 
         def gcp(self):
